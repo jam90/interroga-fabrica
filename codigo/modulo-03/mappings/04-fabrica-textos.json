@@ -1,0 +1,29 @@
+{
+  "mappings": {
+    "properties": {
+      "ts": { "type": "date" },
+      "planta": { "type": "keyword" },
+      "linea": { "type": "keyword" },
+      "tipo_texto": { "type": "keyword" },
+      "turno": { "type": "keyword" },
+      "equipo": { "type": "keyword" },
+      "codigo": { "type": "keyword" },
+      "texto": { "type": "text", "analyzer": "spanish" },
+      "datos": {
+        "properties": {
+          "inicio": { "type": "date" },
+          "fin": { "type": "date" },
+          "duracion_min": { "type": "float" },
+          "descripcion": { "type": "text", "analyzer": "spanish", "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } } },
+          "accion": { "type": "text", "analyzer": "spanish", "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } } },
+          "piezas_ok": { "type": "integer" },
+          "piezas_nok": { "type": "integer" },
+          "averias": { "type": "short" },
+          "microparadas": { "type": "short" },
+          "consumo_kwh": { "type": "float" },
+          "fv_kwh": { "type": "float" }
+        }
+      }
+    }
+  }
+}

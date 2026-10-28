@@ -1,0 +1,29 @@
+{
+  "mappings": {
+    "properties": {
+      "ts": { "type": "date" },
+      "planta": { "type": "keyword" },
+      "linea": { "type": "keyword" },
+      "equipo": { "type": "keyword" },
+      "tipo": { "type": "keyword" },
+      "pieza_id": { "type": "keyword" },
+      "orden_id": { "type": "keyword" },
+      "referencia": { "type": "keyword" },
+      "turno": { "type": "keyword" },
+      "resultado": { "type": "keyword" },
+      "medidas": {
+        "type": "nested",
+        "properties": {
+          "cota": { "type": "keyword" },
+          "valor": { "type": "float" },
+          "nominal": { "type": "float" },
+          "tol_min": { "type": "float" },
+          "tol_max": { "type": "float" },
+          "desviacion": { "type": "float" },
+          "unidad": { "type": "keyword" },
+          "resultado": { "type": "keyword" }
+        }
+      }
+    }
+  }
+}

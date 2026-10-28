@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "properties": {
+      "ts": { "type": "date" },
+      "equipo": { "type": "keyword" },
+      "nivel": { "type": "keyword" },
+      "codigo": { "type": "keyword" },
+      "mensaje": { "type": "text", "analyzer": "spanish", "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } } },
+      "texto": { "type": "text", "analyzer": "spanish" }
+    }
+  }
+}

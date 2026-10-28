@@ -1,0 +1,27 @@
+{
+  "mappings": {
+    "properties": {
+      "ts": { "type": "date" },
+      "planta": { "type": "keyword" },
+      "linea": { "type": "keyword" },
+      "equipo": { "type": "keyword" },
+      "tipo": { "type": "keyword" },
+      "tipo_evento": { "type": "keyword" },
+      "severidad": { "type": "keyword" },
+      "codigo": { "type": "keyword" },
+      "mensaje": { "type": "text", "analyzer": "spanish", "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } } },
+      "datos": {
+        "properties": {
+          "descripcion": { "type": "text", "analyzer": "spanish", "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } } },
+          "accion": { "type": "text", "analyzer": "spanish", "fields": { "keyword": { "type": "keyword", "ignore_above": 256 } } },
+          "referencia": { "type": "keyword" },
+          "inicio": { "type": "date" },
+          "duracion_min": { "type": "float" },
+          "duracion_prevista_s": { "type": "integer" },
+          "anterior": { "type": "keyword" },
+          "nueva": { "type": "keyword" }
+        }
+      }
+    }
+  }
+}

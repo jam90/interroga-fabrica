@@ -1,0 +1,12 @@
+{
+  "mappings": {
+    "properties": {
+      "ts": { "type": "date" },
+      "periodo": { "type": "keyword" },
+      "energia_importada_kwh": { "type": "float" },
+      "energia_exportada_kwh": { "type": "float" },
+      "potencia_media_kw": { "type": "float" },
+      "coste_eur": { "type": "float" }
+    }
+  }
+}

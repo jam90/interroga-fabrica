@@ -1,0 +1,13 @@
+# Solo se sube lo necesario para hacer el curso: el código.
+# Guías, cuestionarios, presentaciones y vídeos van en Moodle.
+/*
+!/.gitignore
+!/README.md
+!/LICENSE
+!/codigo/
+
+# Lo que se genera al hacer las prácticas
+.venv/
+__pycache__/
+sincedb-*
+ficheros-leidos.log

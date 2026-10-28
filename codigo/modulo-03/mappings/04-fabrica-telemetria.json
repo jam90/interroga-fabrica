@@ -1,0 +1,42 @@
+{
+  "mappings": {
+    "properties": {
+      "ts": { "type": "date" },
+      "planta": { "type": "keyword" },
+      "linea": { "type": "keyword" },
+      "equipo": { "type": "keyword" },
+      "tipo": { "type": "keyword" },
+      "estado": { "type": "keyword" },
+      "valores": {
+        "properties": {
+          "programa": { "type": "keyword" },
+          "modo": { "type": "keyword" },
+          "servo_activo": { "type": "boolean" },
+          "override_pct": { "type": "byte" },
+          "ciclo_s": { "type": "float" },
+          "ciclos_total": { "type": "integer" },
+          "corriente_eje1_a": { "type": "float" },
+          "corriente_eje2_a": { "type": "float" },
+          "corriente_eje3_a": { "type": "float" },
+          "corriente_eje4_a": { "type": "float" },
+          "corriente_eje5_a": { "type": "float" },
+          "corriente_eje6_a": { "type": "float" },
+          "temp_motor_eje1_c": { "type": "float" },
+          "temp_motor_eje2_c": { "type": "float" },
+          "temp_motor_eje3_c": { "type": "float" },
+          "temp_motor_eje4_c": { "type": "float" },
+          "temp_motor_eje5_c": { "type": "float" },
+          "temp_motor_eje6_c": { "type": "float" },
+          "potencia_kw": { "type": "float" },
+          "herramienta_id": { "type": "keyword" },
+          "rpm_husillo": { "type": "float" },
+          "carga_husillo_pct": { "type": "float" },
+          "vibracion_mm_s": { "type": "float" },
+          "temp_husillo_c": { "type": "float" },
+          "desgaste_herramienta_pct": { "type": "float" },
+          "nivel_refrigerante_pct": { "type": "float" }
+        }
+      }
+    }
+  }
+}

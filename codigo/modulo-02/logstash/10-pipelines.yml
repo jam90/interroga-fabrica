@@ -1,0 +1,22 @@
+# Apartado 2.10: los pipelines que Logstash arranca cuando se lanza sin -f.
+# Se copia a la carpeta config de Logstash con el nombre pipelines.yml:
+#   cp ~/cursos/codigo/modulo-02/logstash/10-pipelines.yml ~/elk/logstash-9.5.5/config/pipelines.yml
+#
+# Uso (desde la carpeta de Logstash): bin/logstash
+#
+# Cada pipeline empieza por un guion y tiene, al menos:
+#   - pipeline.id: un nombre, distinto para cada uno (sale en el log, entre corchetes);
+#   - path.config: el fichero .conf que tiene que ejecutar, con la ruta completa.
+# ${HOME} es tu carpeta personal, igual que en los .conf.
+
+# Telemetría de la cnc-01 (apartado 2.8)
+- pipeline.id: telemetria-cnc
+  path.config: "${HOME}/cursos/codigo/modulo-02/logstash/08-telemetria-cnc.conf"
+
+# Eventos del robot-02 y de la cnc-01 (apartado 2.9a)
+- pipeline.id: eventos
+  path.config: "${HOME}/cursos/codigo/modulo-02/logstash/09a-eventos.conf"
+
+# Log de texto del robot-02 (apartado 2.9b)
+- pipeline.id: log-robot
+  path.config: "${HOME}/cursos/codigo/modulo-02/logstash/09b-log-robot.conf"

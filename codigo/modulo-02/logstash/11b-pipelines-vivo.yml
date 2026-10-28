@@ -1,0 +1,14 @@
+# Apartado 2.11b: los pipelines de los datos en vivo.
+# Se copia sobre el pipelines.yml de la carpeta config de Logstash:
+#   cp ~/cursos/codigo/modulo-02/logstash/11b-pipelines-vivo.yml ~/elk/logstash-9.5.5/config/pipelines.yml
+# Para volver a los del histórico, copia otra vez 10-pipelines.yml como config/pipelines.yml (apartado 2.10).
+#
+# Uso (desde la carpeta de Logstash): bin/logstash
+
+# Telemetría de la cnc-01, en vivo
+- pipeline.id: vivo-cnc
+  path.config: "${HOME}/cursos/codigo/modulo-02/logstash/11b-vivo-cnc.conf"
+
+# Curva de carga (CSV), en vivo
+- pipeline.id: vivo-energia
+  path.config: "${HOME}/cursos/codigo/modulo-02/logstash/11b-vivo-energia.conf"
