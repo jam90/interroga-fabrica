@@ -12,7 +12,8 @@ codigo/
 │   ├── python/      # scripts de carga (histórico y en vivo por MQTT)
 │   └── logstash/    # pipelines de Logstash (.conf y pipelines.yml)
 └── modulo-03/
-    └── mappings/    # mappings explícitos de los índices fabrica-*
+    ├── mappings/    # mappings explícitos de los índices fabrica-*
+    └── python/      # consultas desde Python
 ```
 
 Los ficheros llevan delante el número del apartado en el que se usan (`04-cargar-inspecciones.py` → apartado 2.4).
