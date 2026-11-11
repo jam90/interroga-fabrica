@@ -12,6 +12,7 @@ codigo/
 │   ├── python/      # scripts de carga (histórico y en vivo por MQTT)
 │   └── logstash/    # pipelines de Logstash (.conf y pipelines.yml)
 └── modulo-03/
+    ├── kibana/      # panel de Kibana ya hecho, para importarlo si te atascas
     ├── mappings/    # mappings explícitos de los índices fabrica-*
     └── python/      # consultas desde Python
 ```
